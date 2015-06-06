@@ -2,16 +2,28 @@
 First thoughts on trying out PythonAnywhere, which is a cloud-hosted
 python environment and web hosting platform
 
+
+** Motivation
++ I learned about PythonAnywhere from the [[http://www.talkpythontome.com][Talk Python to Me]] podcast
++ I am trying it out to see if it would be suitable to use for
+  collaborating with students, etc
 ** Problems encountered
 
 *** Browser compatibility of consoles
-
+Tested on [2015-06-06 Sat]
 | OS   | Browser       | Can type? | Can copy/paste? |
 |------+---------------+-----------+-----------------|
 | OS X | Safari        | Yes       | No              |
 | OS X | Chrome        | Yes       | Yes             |
 | iOS  | Mobile Safari | No        | No              |
 | iOS  | Chrome        | No        | No              |
++ The only combination that works properly is Chrome on OS X
++ Safari on OS X works OK, except that I can't paste from the system
+  clipboard.  Not even using the =Edit->Paste= menu item - it is
+  greyed out.
++ On iOS (on an iPhone 5S) I can't get it to work at all in either
+  browser.  When you open a console, the on-screen keyboard never
+  appears, so it is impossible to type anything.
 
 *** Old emacs version
 Version 23.4.1 is installed, which around 2 years old - an eternity in emacs-dev time!
@@ -25,7 +37,12 @@ For example, org-babel is not properly integrated
 
 + [ ] Is it possible to install more recent version of org-mode?
 + Magit isn't installed either :(
-  + 
+  + But the generic =vc= commands work great
+  + For instance =C-x v v= automatically does =git commit -a=, popping
+    up a buffer for the commit message
+
+*** Missing functionality
+
 
 ** Other things to remember
 
