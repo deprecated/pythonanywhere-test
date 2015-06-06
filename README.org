@@ -1,5 +1,6 @@
 * pythonanywhere-test
-First thoughts on trying out PythonAnywhere, which is a cloud-hosted python environment and web hosting platform
+First thoughts on trying out PythonAnywhere, which is a cloud-hosted
+python environment and web hosting platform
 
 ** Problems encountered
 
@@ -23,14 +24,40 @@ For example, org-babel is not properly integrated
 #+end_src
 
 + [ ] Is it possible to install more recent version of org-mode?
-
++ Magit isn't installed either :(
+  + 
 
 ** Other things to remember
 
-These are issues related to quirks of my personal set-up.  Probably not of any general interest. 
+*Note, the following are not bugs in PythonAnywhere.* They are either
+intrinsic limitations of a web-based environment, or are issues
+related to quirks of my personal set-up.  
+
+*** Limitations of emacs run in a terminal
+Emacs in a terminal works mostly the same as when run as a graphical
+application.  But there are a few little foibles.
+
+**** Missing keybindings
+Some keybindings are lost to the vagaries of ansi terminal escape
+codes, but most have working alternatives:
++ =M-RET= (=org-insert-heading=) doesn't work - use =ESC RET= instead
++ =C-/= (=undo=) doesn't work - use =C-_= instead
++ =C-v= (=scroll-up=) doesn't work (this might actually be a
+  particular limitation of the PythonAnywhere terminal) - use =PgDn=
+  instead, which is =Fn downarrow= on my MacBook keyboard.
+**** Awful colors
++ The default color-scheme is migraine-inducing.  Dark blue or dark red
+  on black are almost imposible to read. 
++ I've fixed a few faces by hand, but ideally I should try loading a
+  different color theme.  I think that was a bit fiddly in emacs 23
+
+
 
 *** Conflicts with Karabiner
 + I have some system-wide emacs-like keybindings set up with Karabiner
-+ These conflict with the idea of running emacs inside a terminal inside a browser, since they get trapped at a higher level and never get seen by emacs
-+ At the moment, I am just deactivating Karabiner while I use PythonEverywhere
++ These conflict with the idea of running emacs inside a terminal
+  inside a browser, since they get trapped at a higher level and never
+  get seen by emacs
++ At the moment, I am just deactivating Karabiner while I use
+  PythonEverywhere
 + In the future I could set up an exception for Chrome in the config
