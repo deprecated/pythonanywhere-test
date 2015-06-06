@@ -1,0 +1,36 @@
+* pythonanywhere-test
+First thoughts on trying out PythonAnywhere, which is a cloud-hosted python environment and web hosting platform
+
+** Problems encountered
+
+*** Browser compatibility of consoles
+
+| OS   | Browser       | Can type? | Can copy/paste? |
+|------+---------------+-----------+-----------------|
+| OS X | Safari        | Yes       | No              |
+| OS X | Chrome        | Yes       | Yes             |
+| iOS  | Mobile Safari | No        | No              |
+| iOS  | Chrome        | No        | No              |
+
+*** Old emacs version
+Version 23.4.1 is installed, which around 2 years old - an eternity in emacs-dev time!
+
+Installed version of org-mode is 6.33, which seems even more out of date.
+For example, org-babel is not properly integrated
+
+#+begin_src emacs-lisp
+(emacs-version)
+#+end_src
+
++ [ ] Is it possible to install more recent version of org-mode?
+
+
+** Other things to remember
+
+These are issues related to quirks of my personal set-up.  Probably not of any general interest. 
+
+*** Conflicts with Karabiner
++ I have some system-wide emacs-like keybindings set up with Karabiner
++ These conflict with the idea of running emacs inside a terminal inside a browser, since they get trapped at a higher level and never get seen by emacs
++ At the moment, I am just deactivating Karabiner while I use PythonEverywhere
++ In the future I could set up an exception for Chrome in the config
