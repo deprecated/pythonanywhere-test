@@ -51,7 +51,8 @@ For example, org-babel is not properly integrated
 
 **** iPython notebooks
 No obvious way to use these, which is odd since it would be a natural
-fit with a web service.
+fit with a web service.  This was mentioned on the podcast as
+something that they want to work on.
 
 
 ** Other things to remember
