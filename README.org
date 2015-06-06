@@ -1,4 +1,4 @@
-* pythonanywhere-test
+* Trying out PythonAnywhere
 First thoughts on trying out PythonAnywhere, which is a cloud-hosted
 python environment and web hosting platform
 
@@ -9,23 +9,26 @@ python environment and web hosting platform
   collaborating with students, etc
 ** Problems encountered
 
-*** Browser compatibility of consoles
+*** Browser compatibility
 Tested on [2015-06-06 Sat]
-| OS   | Browser       | Can type? | Can copy/paste? |
-|------+---------------+-----------+-----------------|
-| OS X | Safari        | Yes       | No              |
-| OS X | Chrome        | Yes       | Yes             |
-| iOS  | Mobile Safari | No        | No              |
-| iOS  | Chrome        | No        | No              |
+| OS   | Browser       | Built-in editor | Type in console? | Copy/paste in console? |
+|------+---------------+-----------------+------------------+------------------------|
+| OS X | Safari        | Yes             | Yes              | No                     |
+| OS X | Chrome        | Yes             | Yes              | Yes                    |
+| iOS  | Mobile Safari | Yes             | No               | No                     |
+| iOS  | Chrome        | Yes             | No               | No                     |
 + The only combination that works properly is Chrome on OS X
 + Safari on OS X works OK, except that I can't paste from the system
   clipboard.  Not even using the =Edit->Paste= menu item - it is
   greyed out.
-+ On iOS (on an iPhone 5S) I can't get it to work at all in either
-  browser.  When you open a console, the on-screen keyboard never
-  appears, so it is impossible to type anything.
++ On iOS (on an iPhone 5S) I can't get the consoles to work at all in
+  either browser.  When you open a console, the on-screen keyboard
+  never appears, so it is impossible to type anything.  The built-in
+  file editor does work fine however.
 
-*** Old emacs version
+*** Missing functionality
+
+**** Old emacs version
 Version 23.4.1 is installed, which around 2 years old - an eternity in emacs-dev time!
 
 Installed version of org-mode is 6.33, which seems even more out of date.
@@ -41,7 +44,14 @@ For example, org-babel is not properly integrated
   + For instance =C-x v v= automatically does =git commit -a=, popping
     up a buffer for the commit message
 
-*** Missing functionality
+
+**** Missing python packages
++ How easy is it to install these by hand?
++ Missing =astropy=
+
+**** iPython notebooks
+No obvious way to use these, which is odd since it would be a natural
+fit with a web service.
 
 
 ** Other things to remember
